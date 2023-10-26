@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+    
+    .center {
+        padding-left: calc(50% - 343px/2);
+        padding-right: calc(50% - 343px/2);
+    }
+
+    .top {
+        height: 495px;
+        background-image: url("image/topmobile.jpg");
+        padding-top: 239px;
+        background-size: cover;
+
+        &__header {
+            font-size: 32px;
+            max-width: 343px;
+            text-align: center;
+        }
+        &__description {
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+    .button {
+        display: flex;
+        justify-content: center;
+        max-width: 245px;
+    }
+
+    .games {
+        &__content {
+            max-width: 343px;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    
+    }
+}
+
+@media (max-width: 374px) {
+    .top {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
