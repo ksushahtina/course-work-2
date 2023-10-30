@@ -48,9 +48,6 @@ a {
             font-weight: 700;
         }
     }
-
-    &__button {
-    }
 }
 
 .button {
@@ -67,6 +64,11 @@ a {
     color: #FFFFFF;
 }
 
+.button:hover {
+    border: 1px solid #EB443F;
+    background: #EB443F;
+}
+
 .games {
     display: flex;
     flex-wrap: wrap;
@@ -77,6 +79,12 @@ a {
     &__content {
         width: 379px;
         position: relative;
+    }
+
+    &__content:hover {
+        cursor: pointer;
+        border: 3px solid #44D2FF;
+        border-radius: 20px;
     }
 
     &__box {
@@ -92,5 +100,6 @@ a {
         line-height: 32px;
         color: $color-text;
     }
- 
 }
+
+@import 'mobile';

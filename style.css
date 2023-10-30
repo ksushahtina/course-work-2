@@ -44,6 +44,7 @@ a {
 .top__description span {
   font-weight: 700;
 }
+
 .button {
   background: #9C0332;
   border-radius: 30px;
@@ -58,6 +59,11 @@ a {
   color: #FFFFFF;
 }
 
+.button:hover {
+  border: 1px solid #EB443F;
+  background: #EB443F;
+}
+
 .games {
   display: flex;
   flex-wrap: wrap;
@@ -68,6 +74,11 @@ a {
 .games__content {
   width: 379px;
   position: relative;
+}
+.games__content:hover {
+  cursor: pointer;
+  border: 3px solid #44D2FF;
+  border-radius: 20px;
 }
 .games__box {
   position: absolute;
@@ -80,4 +91,43 @@ a {
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .center {
+    padding-left: calc(50% - 171.5px);
+    padding-right: calc(50% - 171.5px);
+  }
+  .top {
+    height: 495px;
+    background-image: url("image/topmobile.jpg");
+    padding-top: 239px;
+    background-size: cover;
+  }
+  .top__header {
+    font-size: 32px;
+    max-width: 343px;
+    text-align: center;
+  }
+  .top__description {
+    text-align: center;
+    font-size: 14px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    max-width: 245px;
+  }
+  .games__content {
+    max-width: 343px;
+  }
+  .games__img {
+    width: 100%;
+  }
+}
+@media (max-width: 374px) {
+  .top {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
